@@ -15,17 +15,17 @@ public class Usuarios {
     private String nickname;
     private String clave;
     
-    // Lista estática para almacenar los usuarios
+   
     public static ArrayList<Usuarios> listaUsuarios = new ArrayList<>();
 
-    // Constructor
+    
     public Usuarios(String nombre, String nickname, String clave) {
         this.nombre = nombre;
         this.nickname = nickname;
         this.clave = clave;
     }
 
-    // Métodos Getter
+    
     public String getNombre() {
         return nombre;
     }
@@ -38,7 +38,7 @@ public class Usuarios {
         return clave;
     }
 
-    // Método para guardar un usuario en la lista
+    
     public static void guardarUsuario(String nombre, String nickname, String clave) {
         Usuarios nuevoUsuario = new Usuarios(nombre, nickname, clave);
         listaUsuarios.add(nuevoUsuario);
